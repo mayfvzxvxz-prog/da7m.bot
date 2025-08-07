@@ -4,25 +4,30 @@ body {
   margin: 0;
   min-height: 100vh;
   position: relative;
-  z-index: 1;
-  /* يمنع تداخل الخلفية */
+  background: #23272a;
   overflow-x: hidden;
 }
+
 .bg-gradient {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background: linear-gradient(135deg, #5865F2 0%, #404eed 60%, #23272a 100%);
   z-index: 0;
-  opacity: 0.95;
+  opacity: 0.93;
+  pointer-events: none; /* هذي تضمن أن الخلفية لا تغطي الأزرار أبداً */
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
 }
 
 header {
-  z-index: 1;
-  position: relative;
   text-align: center;
   padding: 3rem 0 1.2rem 0;
 }
+
 .bot-title {
   font-size: 2.7rem;
   color: #fff;
@@ -44,8 +49,6 @@ header {
   gap: 2rem;
   margin-top: 2.7rem;
   flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
 }
 
 .main-btn {
@@ -64,7 +67,8 @@ header {
   align-items: center;
   gap: 0.8rem;
   outline: none;
-  opacity: 1;
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }
 .main-btn:hover, .main-btn:focus {
   transform: translateY(-4px) scale(1.04);
@@ -103,7 +107,6 @@ footer {
   text-align: center;
   padding-bottom: 1.3rem;
   position: relative;
-  z-index: 1;
 }
 .footer-bot {
   color: #fff;
