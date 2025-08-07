@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي الشخصي</title>
+  <title>متجر ديسكورد</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>أهلاً بك في موقعي</h1>
+    <h1>مرحبا بك في متجر ديسكورد!</h1>
   </header>
   <main>
-    <p>هذا قالب بسيط يمكنك تعديله كيف ما تحب</p>
-    <button onclick="sayHello()">اضغطني 🙂</button>
+    <button id="login-discord" class="main-btn">تسجيل الدخول بواسطة ديسكورد</button>
+    <div id="order-section" style="display:none;">
+      <h2>طلب شراء جديد</h2>
+      <label for="order-details">اذكر تفاصيل طلبك:</label>
+      <textarea id="order-details" rows="4" cols="40"></textarea>
+      <br>
+      <button id="submit-order" class="main-btn">إرسال الطلب</button>
+    </div>
+    <div id="output" class="output-box"></div>
   </main>
   <footer>
-    <p>&copy; 2025</p>
+    <p>&copy; 2025 متجر ديسكورد</p>
   </footer>
   <script src="script.js"></script>
 </body>
 </html>
-
