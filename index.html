@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>متجر ديسكورد</title>
+  <title>da7m bot</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bg-gradient"></div>
   <header>
-    <h1>مللللللللللرحبا بك في متجر ديسكورد!</h1>
+    <h1><span class="bot-title">داحم بوت</span></h1>
+    <p class="subtitle">صفحة فخمة خاصة بـ داحم بوت ومبرمجينه</p>
   </header>
   <main>
-    <button id="login-discord" class="main-btn">تسجيل الدخول بواسطة ديسكورد</button>
-    <div id="order-section" style="display:none;">
-      <h2>طلب شراء جديد</h2>
-      <label for="order-details">اذكر تفاصيل طلبك:</label>
-      <textarea id="order-details" rows="4" cols="40"></textarea>
-      <br>
-      <button id="submit-order" class="main-btn">إرسال الطلب</button>
+    <div class="btn-group">
+      <button class="main-btn" onclick="showMessage('✨ هذا هو داحم بوت، بوت مميز وقوي على ديسكورد! 🚀')">
+        <span class="icon">🤖</span> da7m bot
+      </button>
+      <button class="main-btn" onclick="showMessage('👑 مبرمجين داحم بوت: داحم، مايف، والكثير من المبدعين!')">
+        <span class="icon">👨‍💻</span> مبرمجين داحم بوت
+      </button>
     </div>
     <div id="output" class="output-box"></div>
   </main>
   <footer>
-    <p>&copy; 2025 متجر ديسكورد</p>
+    <p>&copy; 2025 <span class="footer-bot">da7m bot</span> - جميع الحقوق محفوظة</p>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    function showMessage(msg) {
+      const output = document.getElementById('output');
+      output.textContent = msg;
+      output.style.display = 'block';
+      output.classList.add('fade-in');
+      setTimeout(() => {
+        output.classList.remove('fade-in');
+      }, 500);
+    }
+  </script>
 </body>
 </html>
