@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>da7m bot</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="bg-gradient"></div>
-  <div class="page-content">
+  <section class="container">
     <header>
-      <h1><span class="bot-title">داحم بوت</span></h1>
+      <h1 class="bot-title">داحم بوت</h1>
       <p class="subtitle">صفحة فخمة خاصة بـ داحم بوت ومبرمجينه</p>
     </header>
     <main>
       <div class="btn-group">
         <button class="main-btn" onclick="showMessage('✨ هذا هو داحم بوت، بوت مميز وقوي على ديسكورد! 🚀')">
-          <span class="icon">🤖</span> da7m bot
+          <span class="icon animate">🤖</span>
+          <span class="btn-text">da7m bot</span>
         </button>
         <button class="main-btn" onclick="showMessage('👑 مبرمجين داحم بوت: داحم، مايف، والكثير من المبدعين!')">
-          <span class="icon">👨‍💻</span> مبرمجين داحم بوت
+          <span class="icon animate">👨‍💻</span>
+          <span class="btn-text">مبرمجين داحم بوت</span>
         </button>
       </div>
       <div id="output" class="output-box"></div>
@@ -27,7 +30,7 @@
     <footer>
       <p>&copy; 2025 <span class="footer-bot">da7m bot</span> - جميع الحقوق محفوظة</p>
     </footer>
-  </div>
+  </section>
   <script>
     function showMessage(msg) {
       const output = document.getElementById('output');
@@ -36,7 +39,7 @@
       output.classList.add('fade-in');
       setTimeout(() => {
         output.classList.remove('fade-in');
-      }, 500);
+      }, 800);
     }
   </script>
 </body>
